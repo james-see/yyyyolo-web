@@ -2,7 +2,7 @@
 set +x
 
 git yolo
-cd gatsby-auth
+cd ../gatsby-auth
 gatsby build
 cd public
 surge
