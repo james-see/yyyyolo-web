@@ -35,19 +35,18 @@ class Login extends React.Component {
           }}
         >
             <div className="m-5 bg-red-200 rounded-sm p-5 content-center">
-          <label className="block text-sm font-medium text-gray-700">
-            Username
-          </label>
-          <input type="text" name="username" onChange={this.handleUpdate} />
-          <label className="block text-sm font-medium text-gray-700">
-            Password
-          </label>
-          <input
-              type="password"
-              name="password"
-              onChange={this.handleUpdate}
-            />
-            <br />
+            <label htmlFor="username" className="block text-sm font-medium text-gray-700">
+                Username
+            </label>
+            <input type="text" id="username" name="username" onChange={this.handleUpdate} />
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                Password
+            </label>
+            <input id="password"
+                type="password"
+                name="password"
+                onChange={this.handleUpdate}
+                />
             <div className="mt-2">
                 <input className="px-2" type="submit" value="Log In" />
             </div>
