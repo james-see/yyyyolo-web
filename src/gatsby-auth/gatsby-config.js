@@ -5,6 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`],
-}
+  plugins: [
+      {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+          postCssPlugins: [require("tailwindcss")],
+          },
+      },
+  ],
+};

@@ -34,19 +34,24 @@ class Login extends React.Component {
             navigate(`/app/profile`)
           }}
         >
-          <label>
+            <div className="m-5 bg-red-200 rounded-sm p-5 content-center">
+          <label className="block text-sm font-medium text-gray-700">
             Username
-            <input type="text" name="username" onChange={this.handleUpdate} />
           </label>
-          <label>
+          <input type="text" name="username" onChange={this.handleUpdate} />
+          <label className="block text-sm font-medium text-gray-700">
             Password
-            <input
+          </label>
+          <input
               type="password"
               name="password"
               onChange={this.handleUpdate}
             />
-          </label>
-          <input type="submit" value="Log In" />
+            <br />
+            <div className="mt-2">
+                <input className="px-2" type="submit" value="Log In" />
+            </div>
+          </div>
         </form>
       </>
     )
