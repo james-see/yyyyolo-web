@@ -4,6 +4,8 @@
 
 html {
     background-color: lavenderblush;
+    background: rgb(224,152,186);
+    background: linear-gradient(90deg, rgba(224,152,186,1) 0%, rgba(209,123,215,1) 46%, rgba(92,228,255,1) 100%);
 
   }
 
