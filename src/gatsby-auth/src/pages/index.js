@@ -23,10 +23,10 @@ export default function Home() {
               <li>2. leave a robot voice message of your choosing. <i>(coming soon)</i></li>
               <li>3. Send a happy birthday message. <i>(coming soon)</i></li>
             </ul>
-              <div className="p-1 mt-6 bg-red-200 bg-opacity-100">
-                <p className="p-3 m-1 font-medium text-gray-900">
+              <div className="dicky">
+                <p className="p-3 mt-5 font-medium text-gray-900">
                 You should <Link to="/app/login">log in</Link> to see restricted
-                content. If you need an account, email james@yyyyolo.com
+                content. <br /> YYYYOLO is in private beta. If you need an account, email <a href="mailto:james@yyyyolo.com">james@yyyyolo.com</a>
                 </p>
               </div>
             </div>

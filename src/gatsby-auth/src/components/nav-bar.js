@@ -7,22 +7,25 @@ export default function NavBar() {
   if (isLoggedIn()) {
     greetingMessage = `Hello ${getUser().name}`
   } else {
-    greetingMessage = "You are not logged in"
+    greetingMessage = "Login or request an account (private beta)"
   }
   return (
     <div
       style={{
+        textAlign: "right",
         display: "flex",
         flex: "1",
-        justifyContent: "space-between",
-        borderBottom: "1px solid #d1c1e0",
+        justifyContent: "right",
+        // borderBottom: "1px solid #d1c1e0",
       }}
     >
-      <span>{greetingMessage}</span>
+      <span className="mx-5">{greetingMessage}</span>
       <nav>
         <Link to="/">Home</Link>
         {` `}
-        <Link to="/app/profile">Profile</Link>
+        {isLoggedIn() ? (<Link to="/app/profile">Profile</Link>) :
+        (<Link to="/app/login">Login</Link>)
+        }
         {` `}
         {isLoggedIn() ? (
           <a
