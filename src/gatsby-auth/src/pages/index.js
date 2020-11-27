@@ -25,8 +25,7 @@ export default function Home() {
             </ul>
               <div className="dicky">
                 <p className="p-3 mt-5 font-medium text-gray-900">
-                You should <Link to="/app/login">log in</Link> to see restricted
-                content. <br /> YYYYOLO is in private beta. If you need an account, email <a href="mailto:james@yyyyolo.com">james@yyyyolo.com</a>
+                You should <Link to="/app/login">log in</Link> to use the pranks and other tools in YYYYOLO. <br /> YYYYOLO is in private beta. If you need an account, email <a href="mailto:james@yyyyolo.com">james@yyyyolo.com</a>
                 </p>
               </div>
             </div>

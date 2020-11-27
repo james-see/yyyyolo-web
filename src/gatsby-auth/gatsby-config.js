@@ -12,5 +12,8 @@ module.exports = {
           postCssPlugins: [require("tailwindcss")],
           },
       },
+      {resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/*`] },
+    },
   ],
 };

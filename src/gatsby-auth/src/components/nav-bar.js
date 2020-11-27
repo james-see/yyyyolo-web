@@ -24,7 +24,7 @@ export default function NavBar() {
         <Link to="/">Home</Link>
         {` `}
         {isLoggedIn() ? (<Link to="/app/profile">Profile</Link>) :
-        (<Link to="/app/login">Login</Link>)
+        (<Link to="/app/profile">Login</Link>)
         }
         {` `}
         {isLoggedIn() ? (
